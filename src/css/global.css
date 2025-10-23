@@ -1,0 +1,26 @@
+:root
+{
+    --storm-ink: #384959;   
+    --storm-slate: #6A89A7; 
+    --storm-sky: #88BDF2;   
+    --storm-cloud: #BDDDFC;
+    --text-dark: #0f141a;
+    --text-light: #f5f7fb;
+    --active-color: #88BDF2;
+}
+
+body
+{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+h1
+{
+    text-align: center;
+    color: black;
+    transition: transform ease;
+}
+

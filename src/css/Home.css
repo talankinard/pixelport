@@ -1,0 +1,140 @@
+#home h2
+{
+    position: static;       
+    margin: 20px 0 6px;
+    text-align: center;
+    transition: transform 0.3 ease;
+}
+
+#popular-grid-wrap
+{
+    background: linear-gradient(135deg, rgba(0,240,255,0.15), rgba(255,0,122,0.15));
+    margin-top: -20px;
+    
+
+}
+
+#popular-grid-wrap h2
+{
+    padding-top:10px;
+
+}
+
+.popular-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 10px 0px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;   /* centers the grid horizontally */
+    align-items: center;       /* centers vertically if there's height */
+    width: 100%;
+    
+}
+
+img 
+{
+    width:300px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.image 
+{
+    max-width: 100%;
+    max-height: 200px;        
+    object-fit: contain;
+}
+
+.catalog
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px 0px; 
+    align-items: start;
+    justify-items: center;
+     background: linear-gradient(135deg, rgba(0,240,255,0.15), rgba(255,0,122,0.15));
+
+}
+
+.pop
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;
+    height: auto;     
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;  
+    position: relative;
+    overflow: visible; 
+    width: 400px;
+    padding-top: 50px;
+}
+
+.pop .image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    overflow: hidden; 
+    border-radius: 6px;
+}
+
+.pop img
+{
+    transition: transform 0.4s ease;
+    
+    
+}
+
+.pop h3
+{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 8px 0;
+    color: #000;
+}
+
+.pop p
+{
+    font-size: 14px;
+    line-height: 1.5;
+    color:black;
+    max-width: 320px;  
+}
+
+/* cite for hover/after https://www.30secondsofcode.org/css/s/hover-shadow-box-animation/*/
+.pop:hover 
+{
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.6), 0 0 40px rgba(255, 0, 122, 0.4); 
+}
+
+.pop:hover img
+{
+    transform: scale(1.1);
+}
+
+.pop::after 
+{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,240,255,0.15), rgba(255,0,122,0.15));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pop:hover::after 
+{
+    opacity: 1;
+}

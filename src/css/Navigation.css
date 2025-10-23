@@ -1,0 +1,91 @@
+#whole-nav
+{
+    background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid black;
+    animation: pulseGrid 10s ease-in-out infinite;
+}
+
+@keyframes pulseGrid 
+{
+    0% { box-shadow: 0 0 12px var(--storm-sky) inset; }
+    50% { box-shadow: 0 0 28px #ff007a inset; }
+    100% { box-shadow: 0 0 12px var(--storm-sky) inset; }
+}
+
+
+
+#whole-nav h1, #whole-nav h2, #whole-nav p
+{
+    margin:0;
+}
+
+main, section 
+{
+    margin-top: 0;
+    padding-top: 16px;
+}
+
+#top-nav ul
+{
+    list-style-type: none;
+    display: flex;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#top-nav a
+{
+    text-decoration: none;
+    color: black;      
+    margin-left: 20px;
+    font-size: 18px;
+    
+}
+
+/* to represent current page */
+#top-nav a.active 
+{
+    color: var(--active-color);            
+    border-bottom: 2px solid var(--active-color);
+    font-weight: bold;
+}
+
+
+/* Sub nav */
+#small-nav
+{
+    position: absolute;     
+    top: 12px;             
+    right: 18px;
+    display: flex;
+    gap: 18px;
+    font-size: 14px;
+            
+}
+
+#small-nav a
+{
+    color: black;
+    padding: 6px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: white;
+    text-decoration: none;
+}
+
+#small-nav a:hover 
+{
+    background:lightgrey;
+    box-shadow: 0 2px 8px;
+    
+  
+}
