@@ -6,59 +6,68 @@
     transition: transform 0.3 ease;
 }
 
-#popular-grid-wrap
+#home h2:hover
 {
-    background: linear-gradient(135deg, rgba(0,240,255,0.15), rgba(255,0,122,0.15));
-    margin-top: -20px;
-    
-
+    transform: scale(1.1); /* https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
 }
 
-#popular-grid-wrap h2
-{
-    padding-top:10px;
 
-}
-
-.popular-grid 
-{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(260px, 1fr));
-    gap: 10px 0px;
-    height: auto;
-    margin: 0 auto;
-    padding: 20px;
-    justify-content: center;   /* centers the grid horizontally */
-    align-items: center;       /* centers vertically if there's height */
-    width: 100%;
-    
-}
-
-img 
-{
-    width:300px;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-.image 
+.game-img 
 {
     max-width: 100%;
-    max-height: 200px;        
     object-fit: contain;
 }
 
-.catalog
+#popular-grid-wrap
 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px 0px; 
-    align-items: start;
-    justify-items: center;
-     background: linear-gradient(135deg, rgba(0,240,255,0.15), rgba(255,0,122,0.15));
+    background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
+    margin: 0;
+    padding: 20px 0; 
+    animation: pulseShadow 3s ease infinite;
+
 
 }
+
+@keyframes pulseShadow {
+  0%
+  {
+    opacity: 1;
+    height: 20px;
+  }
+   25%
+  {
+    opacity: .8;
+    height: 20px;
+  }
+  50%
+  {
+    opacity: .9;
+    height: 20px;
+  }
+  75%
+  {
+    opacity: 1;
+    height: 20px;
+  }
+  100%
+  {
+    opacity: 1.5;
+    height: 28px;
+  }
+}
+
+.popular-grid
+{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 56px 80px;        
+    justify-items: center;   
+    max-width: 1300px;    
+    margin: 24px auto 0;
+}
+
+
 
 .pop
 {
@@ -67,31 +76,27 @@ img
     justify-content: center;  
     align-items: center;      
     text-align: center;
-    height: auto;     
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;  
     position: relative;
-    overflow: visible; 
-    width: 400px;
-    padding-top: 50px;
+    overflow: hidden; 
 }
 
 .pop .image
 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
+    align-items: center;          
     margin-bottom: 20px;
     overflow: hidden; 
     border-radius: 6px;
 }
 
-.pop img
+img
 {
+    height:200px;
+    width:500px;
     transition: transform 0.4s ease;
-    
     
 }
 
@@ -125,7 +130,6 @@ img
 
 .pop::after 
 {
-    pointer-events: none;
     content: "";
     position: absolute;
     inset: 0;
