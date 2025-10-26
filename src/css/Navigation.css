@@ -89,3 +89,49 @@ main, section
     
   
 }
+
+@media (max-width: 700px)
+{
+    #top-nav ul
+    {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    #top-nav a
+    {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    #small-nav
+    {
+        position: static;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    #whole-nav h1
+    {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px)
+{
+    #top-nav a
+    {
+        font-size: 18px;
+    }
+
+    #small-nav a
+    {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+}
+

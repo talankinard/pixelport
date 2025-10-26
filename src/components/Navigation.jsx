@@ -18,12 +18,12 @@ const Navigation = () =>
             </div>
             <nav id="top-nav">
                 <ul id="nav-items" class="hide-small">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="browse.html">Browse</a></li>
-                    <li><a href="deals.html">Deals</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact-us.html">Contact/About</a></li>
+                    <li><Link to="/Home" className="nav-link">Home</Link></li>
+                    <li><Link to="/Browse" className="nav-link">Browse</Link></li>
+                    <li><Link to="/Deals" className="nav-link">Deals</Link></li>
+                    <li><Link to="/News" className="nav-link">News</Link></li>
+                    <li><Link to="/FAQ" className="nav-link">FAQ</Link></li>
+                    <li><Link to="/Contact" className="nav-link">Contact Us</Link></li>
                 </ul>
             </nav>
         </section>

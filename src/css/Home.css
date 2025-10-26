@@ -1,26 +1,18 @@
-#home h2
+.popular-grid
 {
-    position: static;       
-    margin: 20px 0 6px;
-    text-align: center;
-    transition: transform 0.3 ease;
+    animation: fadeIn 1s ease-in-out;
+
 }
 
-#home h2:hover
+@keyframes fadeIn
 {
-    transform: scale(1.1); /* https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
-}
-
-
-.game-img 
-{
-    max-width: 100%;
-    object-fit: contain;
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 #popular-grid-wrap
 {
-    background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
+    background: linear-gradient(135deg, rgba(0,240,255,0.15), rgba(255,0,122,0.15));
     margin: 0;
     padding: 20px 0; 
     animation: pulseShadow 3s ease infinite;
@@ -28,48 +20,21 @@
 
 }
 
-@keyframes pulseShadow {
-  0%
-  {
-    opacity: 1;
-    height: 20px;
-  }
-   25%
-  {
-    opacity: .8;
-    height: 20px;
-  }
-  50%
-  {
-    opacity: .9;
-    height: 20px;
-  }
-  75%
-  {
-    opacity: 1;
-    height: 20px;
-  }
-  100%
-  {
-    opacity: 1.5;
-    height: 28px;
-  }
-}
-
 .popular-grid
 {
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 56px 80px;        
+    gap: 80px 80px;        
     justify-items: center;   
     max-width: 1300px;    
     margin: 24px auto 0;
+
 }
 
 
 
-.pop
+.home-item
 {
     display: flex;
     flex-direction: column;
@@ -80,9 +45,11 @@
     cursor: pointer;  
     position: relative;
     overflow: hidden; 
+    padding:8px;
+    
 }
 
-.pop .image
+.home-item .image
 {
     display: flex;
     justify-content: center;
@@ -95,12 +62,12 @@
 img
 {
     height:200px;
-    width:500px;
+    width:300px;
     transition: transform 0.4s ease;
     
 }
 
-.pop h3
+h2
 {
     font-size: 22px;
     font-weight: 600;
@@ -108,27 +75,19 @@ img
     color: #000;
 }
 
-.pop p
-{
-    font-size: 14px;
-    line-height: 1.5;
-    color:black;
-    max-width: 320px;  
-}
-
 /* cite for hover/after https://www.30secondsofcode.org/css/s/hover-shadow-box-animation/*/
-.pop:hover 
+.home-item:hover 
 {
     transform: translateY(-8px) scale(1.03);
     box-shadow: 0 0 20px rgba(0, 240, 255, 0.6), 0 0 40px rgba(255, 0, 122, 0.4); 
 }
 
-.pop:hover img
+.home-item:hover img
 {
     transform: scale(1.1);
 }
 
-.pop::after 
+.home-item::after 
 {
     content: "";
     position: absolute;
@@ -138,7 +97,43 @@ img
     transition: opacity 0.3s ease;
 }
 
-.pop:hover::after 
+.home-item:hover::after 
 {
     opacity: 1;
+}
+
+@media (max-width: 900px)
+{
+    .popular-grid
+    {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 40px;
+        max-width: 90%;
+    }
+
+    img
+    {
+        width: 250px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 560px)
+{
+    .popular-grid
+    {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    img
+    {
+        width: 220px;
+        height: 160px;
+    }
+
+    h2
+    {
+        font-size: 18px;
+    }
 }
