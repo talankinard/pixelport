@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import './css/index.css';
 import Layout from './Layout';
 import Home from './pages/Home';
@@ -17,7 +17,9 @@ export default function App()
     <BrowserRouter basename= {process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element = {<Layout />}>
-            <Route path = "home" element = {<Home />}/>
+            <Route index element={<Navigate to="home" replace />} />
+
+            <Route path="home" element={<Home />} />
             <Route path = "browse" element = {<Browse />}/>
             <Route path = "deals" element = {<Deals />}/>
             <Route path = "news" element = {<News />}/>
