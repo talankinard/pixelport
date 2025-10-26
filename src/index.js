@@ -18,13 +18,15 @@ export default function App()
       <Routes>
         <Route path="/" element = {<Layout />}>
             <Route index element={<Navigate to="Home" replace />} />
+            <Route path="Home" element={<Navigate to="/pixelport/Home" replace />} />
 
-            <Route path="home" element={<Home />} />
-            <Route path = "browse" element = {<Browse />}/>
-            <Route path = "deals" element = {<Deals />}/>
-            <Route path = "news" element = {<News />}/>
-            <Route path = "faq" element = {<FAQ />}/>
-            <Route path = "contact" element = {<Contact />}/>
+
+            <Route path="Home" element={<Home />} />
+            <Route path = "Browse" element = {<Browse />}/>
+            <Route path = "Deals" element = {<Deals />}/>
+            <Route path = "News" element = {<News />}/>
+            <Route path = "FAQ" element = {<FAQ />}/>
+            <Route path = "Contact" element = {<Contact />}/>
         </Route>
       </Routes>
     </BrowserRouter>
