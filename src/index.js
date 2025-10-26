@@ -14,7 +14,7 @@ import Contact from './pages/Contact'
 export default function App()
 {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename= {process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element = {<Layout />}>
             <Route path = "home" element = {<Home />}/>
