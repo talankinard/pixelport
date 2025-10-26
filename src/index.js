@@ -18,7 +18,8 @@ export default function App()
       <Routes>
         <Route path="/" element = {<Layout />}>
 
-            <Route index element={<Navigate to="./Home" replace />} />
+            <Route index element={<Home />} />
+
 
             <Route path="Home" element={<Home />} />
             <Route path = "Browse" element = {<Browse />}/>
