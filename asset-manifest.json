@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pixelport/static/css/main.30326173.css",
-    "main.js": "/pixelport/static/js/main.49ae828d.js",
+    "main.css": "/pixelport/static/css/main.59093bbe.css",
+    "main.js": "/pixelport/static/js/main.639c85ac.js",
     "static/media/gpu.png": "/pixelport/static/media/gpu.53b2d46eefd85c89ba7c.png",
     "static/media/mousepad.png": "/pixelport/static/media/mousepad.c908e46fc0149d832615.png",
     "static/media/streamdeck.png": "/pixelport/static/media/streamdeck.476c679cb87d9d5d9bdf.png",
@@ -32,11 +32,11 @@
     "static/media/Helldivers-2-Logo.png": "/pixelport/static/media/Helldivers-2-Logo.5592ba3f9e4215caa3c4.png",
     "static/media/amongus.png": "/pixelport/static/media/amongus.167c61cba4fcb9f80023.png",
     "index.html": "/pixelport/index.html",
-    "main.30326173.css.map": "/pixelport/static/css/main.30326173.css.map",
-    "main.49ae828d.js.map": "/pixelport/static/js/main.49ae828d.js.map"
+    "main.59093bbe.css.map": "/pixelport/static/css/main.59093bbe.css.map",
+    "main.639c85ac.js.map": "/pixelport/static/js/main.639c85ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.30326173.css",
-    "static/js/main.49ae828d.js"
+    "static/css/main.59093bbe.css",
+    "static/js/main.639c85ac.js"
   ]
 }
