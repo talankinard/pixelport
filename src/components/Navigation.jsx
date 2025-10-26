@@ -13,8 +13,8 @@ const Navigation = () =>
                 <div></div>
             </div>
             <div id="small-nav">
-                <a href="cart.html" class="cart-link">Cart</a>
-                <a href="login.html" class="signin-link">Sign In</a>
+                <Link to="/Cart" class="cart-link">Cart</Link>
+                <Link to="/Login" class="login-links">Login</Link>
             </div>
             <nav id="top-nav">
                 <ul id="nav-items" class="hide-small">

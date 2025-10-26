@@ -8,7 +8,10 @@ import Browse from './pages/Browse';
 import Deals from './pages/Deals';
 import News from './pages/News';
 import FAQ from './pages/FAQ';
-import Contact from './pages/Contact'
+import Contact from './pages/Contact';
+import Cart from './pages/Cart';
+import Login from './pages/Login';
+import Create from './pages/Create';
 
 
 export default function App()
@@ -27,6 +30,10 @@ export default function App()
             <Route path = "News" element = {<News />}/>
             <Route path = "FAQ" element = {<FAQ />}/>
             <Route path = "Contact" element = {<Contact />}/>
+            <Route path = "Cart" element = {<Cart />}/>
+            <Route path = "Login" element = {<Login />}/>
+            <Route path="Create" element={<Create />} />
+
 
         </Route>
       </Routes>

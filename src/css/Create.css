@@ -1,0 +1,141 @@
+#create-page
+{
+    background: linear-gradient(135deg, rgba(0,240,255,0.1), rgba(255,0,122,0.1));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.create-container
+{
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.95), rgba(245,250,255,0.9));
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0,240,255,0.25);
+    border: 1px solid rgba(0,0,0,0.15);
+    padding: 50px 60px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.create-title
+{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.create-subtitle
+{
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 26px;
+}
+
+.create-form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.create-form label
+{
+    text-align: left;
+    font-weight: 500;
+    color: black;
+    font-size: 15px;
+}
+
+.create-form input
+{
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid rgba(0,0,0,0.2);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-form input:focus
+{
+    border-color: #00f0ff;
+    box-shadow: 0 0 10px rgba(0,240,255,0.4);
+    outline: none;
+}
+
+.create-form button
+{
+    margin-top: 12px;
+    background: linear-gradient(90deg, #00f0ff, #ff007a);
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-form button:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,240,255,0.5), 0 0 40px rgba(255,0,122,0.3);
+}
+
+.create-links
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.create-links p
+{
+    margin: 0;
+    color: #111;
+    font-size: 15px;
+}
+
+.login-link,
+.cancel-link
+{
+    text-decoration: none;
+    color: #0077ff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.login-link:hover,
+.cancel-link:hover
+{
+    color: #ff007a;
+}
+
+@media (max-width: 600px)
+{
+    .create-container
+    {
+        padding: 30px 22px;
+    }
+
+    .create-title
+    {
+        font-size: 26px;
+    }
+
+    .create-subtitle
+    {
+        font-size: 15px;
+    }
+}
+
+@keyframes fadeIn
+{
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
