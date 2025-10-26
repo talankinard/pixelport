@@ -18,8 +18,6 @@ export default function App()
       <Routes>
         <Route path="/" element = {<Layout />}>
             <Route index element={<Navigate to="Home" replace />} />
-            <Route path="home" element={<Navigate to="Home" replace />} />
-
 
             <Route path="Home" element={<Home />} />
             <Route path = "Browse" element = {<Browse />}/>
@@ -28,7 +26,6 @@ export default function App()
             <Route path = "FAQ" element = {<FAQ />}/>
             <Route path = "Contact" element = {<Contact />}/>
 
-            <Route path="*" element={<Navigate to="Home" replace />} />
         </Route>
       </Routes>
     </BrowserRouter>
