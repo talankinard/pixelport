@@ -17,7 +17,6 @@ export default function App()
     <BrowserRouter basename= {process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element = {<Layout />}>
-            <Route index element={<Navigate to="Home" replace />} />
 
             <Route path="Home" element={<Home />} />
             <Route path = "Browse" element = {<Browse />}/>
