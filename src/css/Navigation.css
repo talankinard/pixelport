@@ -191,7 +191,6 @@ main, section
     top: 18px;
     left: 20px;
     z-index: 9999; 
-    
     flex-direction: column;
     justify-content: space-around;
     width: 28px;
