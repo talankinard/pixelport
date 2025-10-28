@@ -3,6 +3,10 @@ import "./../css/Navigation.css";
 import "./../css/global.css";
 import {useState} from "react";
 
+/**
+ * Navigation constant
+ * @returns 
+ */
 const Navigation = () =>
 {
     const [menuOpen, setMenuOpen] = useState(true);
