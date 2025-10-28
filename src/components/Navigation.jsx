@@ -21,8 +21,8 @@ const Navigation = () =>
                     <span></span>
             </div>
             <div id="small-nav" className={menuOpen ? "active" : "hide-small"}>
-                <Link to="/Cart" className="cart-link" onClick={() => setMenuOpen(false)}>Cart</Link>
-                <Link to="/Login" className="login-links" onClick={() => setMenuOpen(false)}>Login</Link>
+                <Link to="/Cart" className="cart-link" >Cart</Link>
+                <Link to="/Login" className="login-links" >Login</Link>
             </div>
             <nav id="top-nav">
                 <ul id="nav-items" className={menuOpen ? "active" : "hide-small"}>
