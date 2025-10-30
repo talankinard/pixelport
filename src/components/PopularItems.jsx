@@ -6,7 +6,7 @@ const PopularItems = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://raw.githubusercontent.com/talankinard/pixelport/main/src/json/Home.json")
+    fetch(`${process.env.PUBLIC_URL}/json/Home.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to load popular items.");
