@@ -1,7 +1,7 @@
 import mic from "../images/blueyetimic.png"
-import gpu from "../json/images/gpu.png"
+import gpu from "../images/gpu.png"
 import skyrim from "../images/skyrim.png"
-import headset from "../json/images/headset.webp"
+import headset from "../images/headset.webp"
 import cyberpunk from "../images/cyberpunk.png"
 import minecraft from "../images/minecraft.png"
 

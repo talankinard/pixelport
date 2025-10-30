@@ -6,7 +6,7 @@ const PopularItems = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://raw.githubusercontent.com/talankinard/talankinard.github.io/main/csce242/projects/part7/json/mainpage.json")
+    fetch("https://raw.githubusercontent.com/talankinard/pixelport/main/src/json/Home.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to load popular items.");
@@ -34,13 +34,12 @@ const PopularItems = () => {
       <div className="popular-grid">
         {items.map((item) => (
           <article key={item._id} className="pop-card">
-            <img src={`images/${item.img}`} alt={item.name} />
+            <img src={`json/images/${item.img}`} alt={item.name} />
             <h3>{item.name}</h3>
             <p className="price">{item.price}</p>
             <p className="rating">{item.rating}/5</p>
             <p className="desc">{item.description}</p>
 
-            {/* Toggle reviews */}
             <details>
               <summary>Reviews ({item.reviews.length})</summary>
               <ul>
