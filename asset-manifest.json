@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/pixelport/static/css/main.86178b08.css",
-    "main.js": "/pixelport/static/js/main.72e0f22a.js",
+    "main.css": "/pixelport/static/css/main.61f58246.css",
+    "main.js": "/pixelport/static/js/main.e5c60fad.js",
     "static/media/gpu.png": "/pixelport/static/media/gpu.53b2d46eefd85c89ba7c.png",
     "static/media/mousepad.png": "/pixelport/static/media/mousepad.c908e46fc0149d832615.png",
-    "static/media/streamdeck.png": "/pixelport/static/media/streamdeck.476c679cb87d9d5d9bdf.png",
     "static/media/powerwash.png": "/pixelport/static/media/powerwash.184faad59c75bd2da01f.png",
     "static/media/xbox.png": "/pixelport/static/media/xbox.c2b9d678bcfeb9488605.png",
     "static/media/skyrim.png": "/pixelport/static/media/skyrim.c7288decb23fa3f6fadd.png",
@@ -14,29 +13,27 @@
     "static/media/razer.png": "/pixelport/static/media/razer.4db771dd5a1eafe91e06.png",
     "static/media/fallout.png": "/pixelport/static/media/fallout.5a78bf86c221658eabcc.png",
     "static/media/gamerel.jpg": "/pixelport/static/media/gamerel.6b6ed89d627edc041d7e.jpg",
-    "static/media/switch2.png": "/pixelport/static/media/switch2.d594c640751f2f3a31fe.png",
+    "static/media/stormfour.png": "/pixelport/static/media/stormfour.3d016a833a4e5fc06af4.png",
+    "static/media/alanwaketwo.png": "/pixelport/static/media/alanwaketwo.670fe8c4b4daa021820c.png",
     "static/media/pixelport.png": "/pixelport/static/media/pixelport.5fe467abdc3f7635b832.png",
-    "static/media/oculus.png": "/pixelport/static/media/oculus.d0a42af6edcdddf0edc4.png",
+    "static/media/rust.jpg": "/pixelport/static/media/rust.16c56cfa3b733a9d6989.jpg",
     "static/media/keyboard.webp": "/pixelport/static/media/keyboard.adb18711aa76c65cb361.webp",
     "static/media/minecraft.png": "/pixelport/static/media/minecraft.68c494d73d4b326ff4ef.png",
     "static/media/teamwork.jpg": "/pixelport/static/media/teamwork.d0d3eba0b2a1faa2d4f1.jpg",
     "static/media/minecraftjava.png": "/pixelport/static/media/minecraftjava.c9bdc20e86cafdda5bcc.png",
-    "static/media/hallowknightsilk.webp": "/pixelport/static/media/hallowknightsilk.0256ccf0d73ca75ccb5a.webp",
     "static/media/turtlebeach.webp": "/pixelport/static/media/turtlebeach.f8f54c7c88ad8a9d4b9e.webp",
+    "static/media/outerwilds.webp": "/pixelport/static/media/outerwilds.86d52fec5deeda2fab78.webp",
     "static/media/borderlands42.avif": "/pixelport/static/media/borderlands42.061ab5706896a9dbfaa7.avif",
     "static/media/ps5.webp": "/pixelport/static/media/ps5.dc57d05ea3103c43e6a8.webp",
-    "static/media/clairobscurexp33.webp": "/pixelport/static/media/clairobscurexp33.8287acbb55659eecc006.webp",
-    "static/media/marvelrivals_300x200.png": "/pixelport/static/media/marvelrivals_300x200.66edab2268b66e274050.png",
     "static/media/monitor.png": "/pixelport/static/media/monitor.057e430f7d3d8e9b6314.png",
     "static/media/cyberpunk.png": "/pixelport/static/media/cyberpunk.0e33715e9290abe02614.png",
-    "static/media/Helldivers-2-Logo.png": "/pixelport/static/media/Helldivers-2-Logo.5592ba3f9e4215caa3c4.png",
     "static/media/amongus.png": "/pixelport/static/media/amongus.167c61cba4fcb9f80023.png",
     "index.html": "/pixelport/index.html",
-    "main.86178b08.css.map": "/pixelport/static/css/main.86178b08.css.map",
-    "main.72e0f22a.js.map": "/pixelport/static/js/main.72e0f22a.js.map"
+    "main.61f58246.css.map": "/pixelport/static/css/main.61f58246.css.map",
+    "main.e5c60fad.js.map": "/pixelport/static/js/main.e5c60fad.js.map"
   },
   "entrypoints": [
-    "static/css/main.86178b08.css",
-    "static/js/main.72e0f22a.js"
+    "static/css/main.61f58246.css",
+    "static/js/main.e5c60fad.js"
   ]
 }
