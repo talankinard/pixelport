@@ -214,6 +214,17 @@
     margin-bottom: 16px;
 }
 
+iframe
+{
+    height: 275px;
+    max-width: 500px;
+    border: 1px solid black;
+    border-radius: 20%;
+    display: block;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
 /* media */
 @media (max-width: 900px)
 {
