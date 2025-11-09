@@ -10,6 +10,7 @@
     justify-content: center;
     margin-top: 20px;
     grid-template-columns: repeat(3, 1fr);
+
 }
 
 .pop-card 
@@ -35,4 +36,32 @@
     height: 220px; 
     object-fit: cover; 
     border-radius: 6px;
+}
+
+@media (max-width: 1000px) {
+  .pop-card {
+    max-width: 250px;
+  }
+  .pop-card img {
+    height: 190px;
+  }
+}
+
+@media (max-width: 800px) {
+  .pop-card {
+    max-width: 220px;
+  }
+  .pop-card img {
+    height: 170px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pop-card {
+    max-width: 180px;
+    font-size: 0.9rem;
+  }
+  .pop-card img {
+    height: 150px;
+  }
 }
