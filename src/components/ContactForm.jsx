@@ -1,50 +1,49 @@
-import React from "react";
+import React, {useState} from "react";
+import axios from "axios";
+import "../css/ContactForm.css"
 
 const ContactForm = () => {
-  const [result, setResult] = React.useState("");
-
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("Sending...");
-    const formData = new FormData(event.target);
-    formData.append("access_key", "75becda6-069b-4bbe-bd69-cfc4fd5cb56b");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
+    const [formData, setFormData] = useState({
+      name: "",
+      email: "",
+      message: "",
     });
+    const [status, setStatus] = useState("");
 
-    const data = await response.json();
-    if (data.success) {
-      setResult("Form Submitted Successfully!");
-      event.target.reset();
-    } else {
-      console.error("Error:", data);
-      setResult(data.message || "Something went wrong.");
-    }
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData((prev) => ({ ...prev, [name]: value }));
+    };
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      setStatus("Sending...");
+
+      try {
+        await axios.post("https://pixelport-server.onrender.com/api/contact", formData);
+        setStatus("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      } catch (err) {
+        setStatus("Error sending message. Please try again.");
+      }
   };
 
   return (
-    <section className="one">
-      <form method="POST" id="contact-form" onSubmit={onSubmit}>
-        <p className="other">
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" required />
-        </p>
+    <section id="contact-section">
+      <h2>Contact Us</h2>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <label>Name</label>
+        <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Enter your name" required/>
 
-        <p className="other">
-          <label htmlFor="email">Email:</label>
-          <input type="email" name="email" required />
-        </p>
+        <label>Email</label>
+        <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Enter your email" required/>
 
-        <p className="message">
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" required></textarea>
-        </p>
+        <label>Message</label>
+        <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Write your message here"required ></textarea>
 
-        <button type="submit">Submit Form</button>
-        <span>{result}</span>
+        <button type="submit">Send Message</button>
       </form>
+      {status && <p className="form-status">{status}</p>}
     </section>
   );
 };

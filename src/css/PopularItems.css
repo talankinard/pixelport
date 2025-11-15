@@ -38,6 +38,11 @@
     border-radius: 6px;
 }
 
+.add-cart-button
+{
+  margin-top:10px;
+}
+
 @media (max-width: 1000px) {
   .pop-card {
     max-width: 250px;
