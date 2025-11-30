@@ -4,6 +4,7 @@ import ContactMain from "../components/ContactMain";
 import ContactInfo from "../components/ContactInfo";
 import ContactForm from "../components/ContactForm";
 import ContactFooter from "../components/ContactFooter";
+import FeedbackBoard from "../components/FeedbackBoard";
 
 
 
@@ -15,6 +16,7 @@ const Contact = () =>
             <ContactInfo />
             <ContactForm />
             <ContactFooter />
+            <FeedbackBoard />
         </div>
     );
 };
